@@ -1,0 +1,183 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;                  /*color added to section and not to h1 so that if we add some text to this section later on, it's uniform*/
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+h1, h2, h3, h4, h5, h6 {                    /*combining selectors, and when combining without space, all the selectors should be of the same element*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Navigation bar */
+
+.navbar {
+  padding:0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+/* Download buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Tite image */
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.title-image {
+   width: 60%;
+   transform: rotate(25deg);
+   position: absolute;          /*using to make the image go behind features section*/
+   right: 25%;
+}
+
+@media (max-width: 1028px) {         /*media query breakpoint, here it says on all sizes equal or less than 1028px, apply these styles*/
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;             /*so that in ipad or mobile state, it does not hide behind features section*/
+    transform: rotate(0);
+  }
+}
+
+/* Features section */
+
+#features {
+  padding: 7% 15%;
+  position: relative;            /*using to make the image go behind features section, this is a positioned element so it will be on top even without editing its z index*/
+  background-color: #fff;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.feature-icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icon:hover {
+  color: #ff4c68;
+}
+
+/* testimonial section */
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;           /*padding added to this and not the section so that next and prev buttons are in corners and not squished*/
+}
+
+/* Press section */
+
+#press {
+  text-align: center;
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.price-text {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+/* CTA Section */
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 7% 15%;
+  color: #fff;
+}
+
+/* Footer section */
+
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.social-icons {
+  margin: 20px 10px;
+}
